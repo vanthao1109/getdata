@@ -1,0 +1,15 @@
+
+{% load static %}
+{% block title %}Display Fitgap{% endblock %}
+{% block site_css %}
+  <link rel="stylesheet" href="{% static 'style1.css' %}">
+{% endblock %}
+
+
+
+{% block body %}
+<section id="continue">
+    <img src="{% static 'fit_graph.jpg'  %}" style="width:500px;height:500px;">
+    <p><a href="/clipage" class="btn">Click here to go back</a></p>
+</section>
+{% endblock %}

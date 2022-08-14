@@ -1,0 +1,38 @@
+  .serpage-section {
+    max-width: 40rem;
+    margin: 3rem auto;
+  }
+
+  .serpage-actions {
+    margin-top: 1.5rem;
+    text-align: right;
+  }
+  
+  .serpage-actions .btn {
+    background-color: #cb82fb;
+    border-color: #cb82fb;
+    color: #350490;
+    padding: 0.75rem 2rem;
+  }
+
+  .serpage-actions .btn {
+    background-color: #cb82fb;
+    border-color: #cb82fb;
+    color: #350490;
+    padding: 0.75rem 2rem;
+  }
+
+  .serpage-image {
+    margin-right: 2rem;
+  }
+  
+  .serpage-image img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+
+  
+  

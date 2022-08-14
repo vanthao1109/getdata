@@ -1,0 +1,64 @@
+
+{% load static %}
+{% block title %}Configure the MySQL and Display Records{% endblock %}
+{% block site_css %}
+  <link rel="stylesheet" href="{% static 'style1.css' %}">
+{% endblock %}
+{% block main_heading %}
+How To Configure The MysSQL Database
+{% endblock %}
+
+{% block body %}
+<section>
+  <h2>Python Using Django Webframework</h2>
+  <table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Invoice Id</th>
+        <th>Branch</th>
+        <th>City</th>
+        <th>Customer</th>
+        <th>Sex</th>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Tax</th>
+        <th>Total Price</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Payment</th>
+        <th>Cogs</th>
+        <th>Gross Margin Percentage</th>
+        <th>Gross Income</th>
+        <th>Rating</th>
+    </tr>
+    {% for getdata in object_List %}
+    <tr>
+        <td>{{ getdata.id }}</td>
+        <td>{{ getdata.invoice_id }}</td>
+        <td>{{ getdata.branch }}</td>
+        <td>{{ getdata.city }}</td>
+        <td>{{ getdata.customer }}</td>
+        <td>{{ getdata.sex }}</td>
+        <td>{{ getdata.product }}</td>
+        <td>{{ getdata.price }}</td>
+        <td>{{ getdata.quantity }}</td>
+        <td>{{ getdata.tax }}</td>
+        <td>{{ getdata.total_price }}</td>
+        <td>{{ getdata.date }}</td>
+        <td>{{ getdata.time }}</td>
+        <td>{{ getdata.payment }}</td>
+        <td>{{ getdata.cogs }}</td>
+        <td>{{ getdata.gross_margin_percentage }}</td>
+        <td>{{ getdata.gross_income }}</td>
+        <td>{{ getdata.rating }}</td>
+        
+    </tr>
+    {% endfor %}
+  </table>
+</section>
+<section id="continue">
+    <p>Click here to see the chart!</p>
+    <p><a href="/clipage" class="btn">Explore our Chart</a></p>
+</section>
+{% endblock %}
